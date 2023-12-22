@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "HIV_Isoform_filter"
+version = "1.0.0"
+authors = [
+  { name="Jessica Lauren Albert", email="jessica.albert2001@gmail.com" },
+]
+description = "Filters .gtf file of suspected HIV isoforms and confirms the isoform identities"
+readme = "README.md"
+license = {file = "LICENSE.txt"}
+keywords = ["HIV", "Isoforms", "splicing", "ONT sequencing"]
+dependencies = [
+	"argparse",
+	"os",
+	"regex",
+	"csv",
+	"math",
+]	
+requires-python = ">=3.11"
+classifiers = [
+	"Programming Language :: Python :: 3",
+   	"License :: OSI Approved :: MIT License",
+	"Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/pypa/sampleproject"
+Issues = "https://github.com/pypa/sampleproject/issues"

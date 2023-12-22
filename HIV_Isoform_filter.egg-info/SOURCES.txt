@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+HIV_Isoform_filter.egg-info/PKG-INFO
+HIV_Isoform_filter.egg-info/SOURCES.txt
+HIV_Isoform_filter.egg-info/dependency_links.txt
+HIV_Isoform_filter.egg-info/requires.txt
+HIV_Isoform_filter.egg-info/top_level.txt
