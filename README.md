@@ -20,21 +20,6 @@ following filters.
 transcript entry = ref genome, analysis_pathway, transcript, start, end, ".", "+", ".", [transcript id; gene id; gene_name; xloc; ref_gene_id; contained_in; cmp_ref; class_code; tss_id]
 >exon entry = ref genome, analysis_pathway, exon, start, end, ".", "+", ".", [transcript id; gene id; exon number]
 
-## Installation
-Fast install:
-
-    pip install HIV_Isoform_Filter
-
-For a manual install, get this package:
-
-    wget https://github.com/nikhilkumarsingh/mygmap/archive/master.zip ******
-    unzip master.zip
-    rm master.zip
-    cd mygmap-master********
-
-Then, install the package:
-
-    python setup.py install    
 
 ## Usage
     HIV Isoform Filter [options] input_file_name output_file_prefix ref_file_name
