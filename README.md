@@ -26,7 +26,9 @@ following filters.
 Fast install:
 
     pip install HIV_Isoform_filter
-   
+    
+ > NOTE: Dependencies currently do not download with the package. Please run use pip to install **regex, math, argparse, and csv** before using package.
+  
 
 ## Usage
     HIV_Isoform_Filter [options] input_file_name output_file_prefix ref_file_name
