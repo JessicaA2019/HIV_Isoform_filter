@@ -17,17 +17,17 @@ following filters.
            (vif -> vpr -> unslpiced_tat -> env)
 
 > Note: This code currently relies on a very specific setup of the gtf file to work properly. The note must be in the order designated in the [].
-transcript entry = ref genome, analysis_pathway, transcript, start, end, ".", "+", ".", [transcript id; gene id; gene_name; xloc; ref_gene_id; contained_in; cmp_ref; class_code; tss_id]
->exon entry = ref genome, analysis_pathway, exon, start, end, ".", "+", ".", [transcript id; gene id; exon number]
+> transcript entry = ref genome, analysis_pathway, transcript, start, end, ".", "+", ".", [transcript id; gene id; gene_name; xloc; ref_gene_id; contained_in; cmp_ref; class_code; tss_id]
+> exon entry = ref genome, analysis_pathway, exon, start, end, ".", "+", ".", [transcript id; gene id; exon number]
 
 ## Installation
 Fast install:
 
-    pip install HIV_Isoform_Filter
+    pip install HIV_Isoform_filter
    
 
 ## Usage
-    HIV Isoform Filter [options] input_file_name output_file_prefix ref_file_name
+    HIV_Isoform_Filter [options] input_file_name output_file_prefix ref_file_name
 
 positional arguments:
   input_file_name       Designates input file to be filtered. This is required.
@@ -48,4 +48,3 @@ options:
 
 MIT - Copyright (c) 2023 Jessica Lauren Albert
 
-# HIV_Isoform_filter
