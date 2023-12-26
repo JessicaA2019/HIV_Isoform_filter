@@ -17,7 +17,9 @@ following filters.
            (vif -> vpr -> unslpiced_tat -> env)
 
 > Note: This code currently relies on a very specific setup of the gtf file to work properly. The note must be in the order designated in the [].
+
 > transcript entry = ref genome, analysis_pathway, transcript, start, end, ".", "+", ".", [transcript id; gene id; gene_name; xloc; ref_gene_id; contained_in; cmp_ref; class_code; tss_id]
+
 > exon entry = ref genome, analysis_pathway, exon, start, end, ".", "+", ".", [transcript id; gene id; exon number]
 
 ## Installation
