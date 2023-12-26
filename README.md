@@ -16,8 +16,10 @@ following filters.
 - FILTER 10: check possible_misassigned for partial splice compatibility
            (vif -> vpr -> unslpiced_tat -> env)
 
-> Note: This code currently relies on a very specific setup of the gtf file to work properly. The note must be in the order designated in the []. /n
+> Note: This code currently relies on a very specific setup of the gtf file to work properly. The note must be in the order designated in the [].
+
 > transcript entry = ref genome, analysis_pathway, transcript, start, end, ".", "+", ".", [transcript id; gene id; gene_name; xloc; ref_gene_id; contained_in; cmp_ref; class_code; tss_id]
+
 > exon entry = ref genome, analysis_pathway, exon, start, end, ".", "+", ".", [transcript id; gene id; exon number]
 
 
@@ -25,6 +27,8 @@ following filters.
     HIV Isoform Filter [options] input_file_name output_file_prefix ref_file_name
 
 positional arguments:
+| Arguement | Function |
+| ------ | ------ |
 | input_file_name | Designates input file to be filtered. This is required. |
 | output_file_prefix | Designates output file prefix. This is required. |
 | ref_file_name | Designates reference CDS file name. This should be a python file with only a dictionary with the splice donor sites, splice acceptor sites and gene CDS regions defined. This is required. An example is available in the test data set. |
