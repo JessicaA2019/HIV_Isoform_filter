@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
-Name: HIV-Isoform-filter
-Version: 1.0.0
+Name: HIV_Isoform_filter
+Version: 1.0.2
 Summary: Filters .gtf file of suspected HIV isoforms and confirms the isoform identities
 Home-page: 
 Author: Jessica Lauren ALbert
@@ -27,8 +27,7 @@ License: MIT License
         OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
         SOFTWARE.
         
-Project-URL: Homepage, https://github.com/pypa/sampleproject
-Project-URL: Issues, https://github.com/pypa/sampleproject/issues
+Project-URL: Homepage, https://github.com/JessicaA2019/HIV_Isoform_filter
 Keywords: HIV,Isoforms,splicing,ONT sequencing
 Classifier: Programming Language :: Python :: 3
 Classifier: License :: OSI Approved :: MIT License
@@ -36,11 +35,6 @@ Classifier: Operating System :: OS Independent
 Requires-Python: >=3.11
 Description-Content-Type: text/markdown
 License-File: LICENSE.txt
-Requires-Dist: argparse
-Requires-Dist: os
-Requires-Dist: regex
-Requires-Dist: csv
-Requires-Dist: math
 
 # HIV Isoform Filter
 
@@ -68,17 +62,7 @@ transcript entry = ref genome, analysis_pathway, transcript, start, end, ".", "+
 Fast install:
 
     pip install HIV_Isoform_Filter
-
-For a manual install, get this package:
-
-    wget https://github.com/nikhilkumarsingh/mygmap/archive/master.zip ******
-    unzip master.zip
-    rm master.zip
-    cd mygmap-master********
-
-Then, install the package:
-
-    python setup.py install    
+   
 
 ## Usage
     HIV Isoform Filter [options] input_file_name output_file_prefix ref_file_name
@@ -102,3 +86,4 @@ options:
 
 MIT - Copyright (c) 2023 Jessica Lauren Albert
 
+# HIV_Isoform_filter

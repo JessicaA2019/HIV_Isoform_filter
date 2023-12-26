@@ -4,10 +4,6 @@ from setuptools import setup, find_packages
 with open('DESCRIPTION.txt') as file:
     long_description = file.read()
   
-  
-# specify requirements of your package here
-REQUIREMENTS = ['regex', 'csv','argsparse', 'os', 'math']
-
 
 # some more details
 CLASSIFIERS = [
@@ -25,7 +21,7 @@ CLASSIFIERS = [
   
 # calling the setup function 
 setup(name='HIV_Isoform_Filter',
-      version='1.0.0',
+      version='1.0.2',
       description='Filters .gtf file of suspected HIV isoforms and confirms the isoform identities.',
       long_description=long_description,
       url='',#####
@@ -33,12 +29,8 @@ setup(name='HIV_Isoform_Filter',
       author_email='jessica.albert@seattlechildrens.org',
       license='MIT',
       packages = find_packages(),
-      entry_points ={
-          'console_scripts': [
-                'HIV_filter = HIV_Isoform_filter.CLI_HIV_Isoform_Filtering:main'
-            ]
-      },
+      entry_points = {'console_scripts': ['HIV_Isoform_filter = HIV_Isoform_filter.__main__:main']},
       classifiers=CLASSIFIERS,
-      install_requires=REQUIREMENTS,
-      keywords='HIV isoforms gtf_file CDS_region ONTsequencing'
+      keywords='HIV isoforms gtf_file CDS_region ONTsequencing',
+      include_package_data = True
       )
