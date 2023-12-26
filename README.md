@@ -17,30 +17,29 @@ following filters.
            (vif -> vpr -> unslpiced_tat -> env)
 
 > Note: This code currently relies on a very specific setup of the gtf file to work properly. The note must be in the order designated in the [].
-transcript entry = ref genome, analysis_pathway, transcript, start, end, ".", "+", ".", [transcript id; gene id; gene_name; xloc; ref_gene_id; contained_in; cmp_ref; class_code; tss_id]
->exon entry = ref genome, analysis_pathway, exon, start, end, ".", "+", ".", [transcript id; gene id; exon number]
+> transcript entry = ref genome, analysis_pathway, transcript, start, end, ".", "+", ".", [transcript id; gene id; gene_name; xloc; ref_gene_id; contained_in; cmp_ref; class_code; tss_id]
+> exon entry = ref genome, analysis_pathway, exon, start, end, ".", "+", ".", [transcript id; gene id; exon number]
 
 
 ## Usage
     HIV Isoform Filter [options] input_file_name output_file_prefix ref_file_name
 
 positional arguments:
-  input_file_name       Designates input file to be filtered. This is required.
-  output_file_prefix    Designates output file prefix. This is required.
-  ref_file_name         Designates reference CDS file name. This should be a python file with only a dictionary with the splice donor sites, splice acceptor sites and gene CDS regions defined. This is required. An example is available in the test data set.
+| input_file_name | Designates input file to be filtered. This is required. |
+| output_file_prefix | Designates output file prefix. This is required. |
+| ref_file_name | Designates reference CDS file name. This should be a python file with only a dictionary with the splice donor sites, splice acceptor sites and gene CDS regions defined. This is required. An example is available in the test data set. |
 
 options:
 | Arguement | Function |
 | ------ | ------ |
 |-h, --help |  show this help message and exit |
-|-g value, --gap value|Sets gap tolerance. Default is 15.
-|-a value, --startBP value|Sets maximum starting bp. Default is 700.
-|-z value, --endBP value|Sets minimum ending bp. Default is 9500.
-|-l value, --lengthFS value|Sets maximum fully spliced transcript length. Default is 2100.
-|-n value, --NCE value|When set to True, csv file will have y/n columns for the precence of NCEs. Default is False.
+|-g value, --gap value|Sets gap tolerance. Default is 15. |
+|-a value, --startBP value|Sets maximum starting bp. Default is 700. |
+|-z value, --endBP value|Sets minimum ending bp. Default is 9500. |
+|-l value, --lengthFS value|Sets maximum fully spliced transcript length. Default is 2100. |
+|-n value, --NCE value|When set to True, csv file will have y/n columns for the precence of NCEs. Default is False. |
 
 ## License
 
 MIT - Copyright (c) 2023 Jessica Lauren Albert
 
-# HIV_Isoform_filter
