@@ -16,7 +16,7 @@ following filters.
 - FILTER 10: check possible_misassigned for partial splice compatibility
            (vif -> vpr -> unslpiced_tat -> env)
 
-> Note: This code currently relies on a very specific setup of the gtf file to work properly. The note must be in the order designated in the [].
+> Note: This code currently relies on a very specific setup of the gtf file to work properly. The note must be in the order designated in the [] below.
 
 > transcript entry = ref genome, analysis_pathway, transcript, start, end, ".", "+", ".", [transcript id; gene id; gene_name; xloc; ref_gene_id; contained_in; cmp_ref; class_code; tss_id]
 
