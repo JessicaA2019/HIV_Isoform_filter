@@ -36,9 +36,9 @@ Fast install:
 positional arguments:
 | Arguement | Function |
 | ------ | ------ |
-|input_file_name  |     Designates input file to be filtered. This is required.|
+|input_file_name  |     Designates path to input file to be filtered. This is required.|
 |  output_file_prefix  |  Designates output file prefix. This is required.|
-|  ref_file_name     |    Designates reference CDS file name. This should be a python file with only a dictionary with the splice donor sites, splice acceptor sites and gene CDS regions defined. This is required. An example is available in the test data set.|
+|  ref_file_name     |    Designates path to reference CDS file. This should be a python file with only a dictionary with the splice donor sites, splice acceptor sites and gene CDS regions defined. This is required. An example is available in the test data set.|
 
 options:
 | Arguement | Function |
@@ -49,6 +49,21 @@ options:
 |-z value, --endBP value|Sets minimum ending bp. Default is 9500.
 |-l value, --lengthFS value|Sets maximum fully spliced transcript length. Default is 2100.
 |-n value, --NCE value|When set to True, csv file will have y/n columns for the precence of NCEs. Default is False.
+
+### Testing with Test files
+Navagate to folder with test files and run following command.
+
+    HIV_Isoform_Filter barcode19_HIV_annotated.gtf test_file NL43_complete_splice_sites.py 
+
+The following files should be created in the working directory: 
+| File | Contents |
+| ------ | ------ |
+| test_file_altered.txt | List of samples that had small deletions ammended.|
+| test_file_fail.txt | List of samples that failed any of the filters. |
+| test_file_pass.txt | List of samples that passed all of the filters. |
+| test_file_splice_site_usage.csv | CSV of the usage counts and percentages for each donor site, acceptor site, and pairwise combinataion.|
+| test_file.csv| CSV of only samples that pass all the filters with any ammendments made by the filter. |
+| test_file.log | Log of run conditions. |
 
 ## License
 
