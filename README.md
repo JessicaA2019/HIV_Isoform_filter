@@ -30,9 +30,11 @@ Fast install:
     HIV_Isoform_Filter [options] input_file_name output_file_prefix ref_file_name
 
 positional arguments:
-  input_file_name       Designates input file to be filtered. This is required.
-  output_file_prefix    Designates output file prefix. This is required.
-  ref_file_name         Designates reference CDS file name. This should be a python file with only a dictionary with the splice donor sites, splice acceptor sites and gene CDS regions defined. This is required. An example is available in the test data set.
+| Arguement | Function |
+| ------ | ------ |
+|input_file_name  |     Designates input file to be filtered. This is required.|
+|  output_file_prefix  |  Designates output file prefix. This is required.|
+|  ref_file_name     |    Designates reference CDS file name. This should be a python file with only a dictionary with the splice donor sites, splice acceptor sites and gene CDS regions defined. This is required. An example is available in the test data set.|
 
 options:
 | Arguement | Function |
