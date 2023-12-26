@@ -27,7 +27,7 @@ Fast install:
 
     pip install HIV_Isoform_filter
     
- > NOTE: Dependencies currently do not download with the package. Please run use pip to install **regex, math, argparse, and csv** before using package.
+ > NOTE: Dependencies currently do not download with the package. Please use pip to install **regex, math, argparse, and csv** before using package.
   
 
 ## Usage
